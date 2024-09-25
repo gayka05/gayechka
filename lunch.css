@@ -1,4 +1,3 @@
-/* Общие стили */
 body {
     font-family: 'Sofadi One', sans-serif; /* Шрифт */
     margin: 0; /* Убираем отступы по умолчанию */
@@ -54,11 +53,13 @@ main {
     margin-bottom: 20px; /* Отступ снизу блока блюда */
     width: calc(30% - 20px); /* Ширина блока блюда с учетом отступов */
     box-shadow: 0 2px 5px rgba(244, 78, 153, 0.622); /* Тень для блока блюда */
-    transition: background-color 0.3s ease; /* Плавный переход цвета фона при наведении */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Плавный переход цвета фона и рамки при наведении */
 }
 
+/* Эффект при наведении на блок блюда */
 .dish-item:hover {
     background-color: #e0e0e0; /* Цвет фона при наведении на блок блюда */
+    border: 2px solid red; /* Окаймовка красного цвета при наведении */
 }
 
 .dish-item img {
@@ -99,5 +100,5 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline; /* Подчеркивание ссылок при наведении в футере */
+    text-decoration: underline; /* Подчеркивание ссылок при наведении в футере */ 
 }

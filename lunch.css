@@ -102,6 +102,7 @@ button:hover {
 /* Футер */
 footer {
     text-align: center; /* Центрирование текста в футере */
+    font-size: 28px;
     padding: 20px 0; /* Внутренние отступы футера */
 }
 

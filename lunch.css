@@ -48,6 +48,9 @@ main {
 .dish-content p.price {
     font-size: 1.1em;
 }
+.dish-content p.name {
+    font-size: 1.1em;
+}
 
 .dish-item {
     background-color: #f9f9f9; /* Цвет фона для блока блюда */

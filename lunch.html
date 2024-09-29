@@ -119,50 +119,68 @@
 
 </main>
 
-  <section>
+ <section id='order-form'>
+    <!-- Форма заказа -->
     <h2>Форма заказа</h2>
-    
-   <form action="https://httpbin.org/post" method="POST">
-       <div class="form-container">
-           <!-- Вертикальная колонка с заказом клиента -->
-           <div class="order-section">
-               <fieldset>
-                   <legend>Ваш заказ</legend>
 
-                   <label for="soup">Суп:</label>
-                   <select id="soup" name="soup" required>
-                       <option value="">Выберите суп</option>
-                       <option value="gaspacho">Гаспачо</option>
-                       <option value="borscht">Борщ</option>
-                       <option value="mushroom">Грибной</option>
-                   </select>
+   <!-- Контейнер для формы с двумя колонками -->
+   <form action='https://httpbin.org/post' method='POST'>
+       <!-- Вертикальная колонка с заказом клиента -->
+       <!-- Заказ клиента -->
+       <div style='display:flex;'>
+           <!-- Поля заказа -->
+           <!-- Суп -->
+           <fieldset style='flex-basis: 50%; display:flex; flex-direction: column;'>
+               <!-- Поля заказа -->
+               <!-- Суп -->
+               <label for='soup'>Суп:</label><br />
+               <!-- Селект для супа -->
+               <select id='soup' name='soup' required style='margin-bottom:10px;'>
+                   <option value="">Выберите суп</option>
+                   <!-- Добавьте другие опции по мере необходимости -->
+                   <!-- Пример опций -->
+                   <!-- ... -->
+               </select>
 
-                   <label for="main_course">Главное блюдо:</label>
-                   <select id="main_course" name="main_course" required>
-                       <option value="">Выберите главное блюдо</option>
-                       <option value="steak">Стейк</option>
-                       <option value="cabbage_rolls">Голубцы</option>
-                       <option value="shashlik">Шашлык</option>
-                   </select>
+               <!-- Главное блюдо -->
+               <!-- ... (добавьте селект для главного блюда) ... -->
 
-                   <label for="drink">Напиток:</label>
-                   <select id="drink" name="drink" required>
-                       <option value="">Выберите напиток</option>
-                       <option value="orange_juice">Апельсиновый сок</option>
-                       <option value="pomegranate_juice">Гранатовый сок</option>
-                       <option value="apple_juice">Яблочный сок</option>
-                   </select>
+               <!-- Напиток -->
+               <!-- ... (добавьте селект для напитка) ... -->
 
-                   <label for="comments">Комментарии:</label>
-                   <textarea id="comments" name="comments"></textarea>
+               <!-- Комментарии -->
+               <!-- ... (добавьте текстовое поле для комментариев) ... -->
 
-               </fieldset>
-           </div>
+           </fieldset>
+
+           <!-- Вертикальная колонка с данными клиента справа -->
+           <!-- Данные клиента -->
+           <fieldset style='flex-basis: 50%; display:flex; flex-direction: column;'>
+               <!-- Имя -->
+               <label for='name'>Имя:</label><br />
+               <!-- Поле ввода имени -->
+               <input type='text' id='name' name='name' required style='margin-bottom:10px;' />
+
+               <!-- Email -->
+               <!-- ... (добавьте поле ввода email) ... -->
+
+               <!-- Телефон -->
+               <!-- ... (добавьте поле ввода телефона) ... -->
+
+               <!-- Адрес -->
+               <!-- ... (добавьте поле ввода адреса) ... -->
+
+               <!-- Время доставки -->
+               <!-- ... (добавьте селект или радио-кнопки для времени доставки) ... -->
+
+           </fieldset>
+
        </div >
 
        <!-- Кнопки -->
-       <button type = "reset ">Сбросить</button >
-       <button type = "submit ">Отправить</button >
+       <!-- Кнопка сброса и отправки формы -->
+       <button type='reset'>Сбросить</button >
+       <button type='submit'>Отправить</button >
 
    </form >
 </section >

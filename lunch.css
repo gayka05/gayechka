@@ -45,8 +45,12 @@ main {
     flex-wrap: wrap;
     justify-content: space-between; /* Распределение элементов по строкам */
 }
+.dish {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Распределение элементов по строкам */
+}
 
-/* Блоки блюда */
 .dish-item {
     background-color: #f9f9f9; /* Цвет фона для блока блюда */
     border-radius: 10px; /* Закругление углов блока блюда */
@@ -77,6 +81,61 @@ main {
     text-align: center; /* Центрирование текста названия блюда */
 }
 
+
+/* Кнопки "Добавить" */
+button {
+    background-color: #ff9900; /* Цвет фона кнопки */
+    border: none; /* Убираем рамку кнопки */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    border-radius: 5px; /* Закругление углов кнопки */
+    cursor: pointer; /* Курсор при наведении на кнопку */
+    margin-top: auto; /* Автоматический отступ сверху для центрирования внизу блока */
+}
+
+button:hover {
+    background-color: #eb1717; /* Цвет фона кнопки при наведении */
+}
+
+.dish-item {
+    background-color: #f9f9f9; /* Цвет фона для блока блюда */
+    border-radius: 10px; /* Закругление углов блока блюда */
+    padding: 15px; /* Внутренние отступы блока блюда */
+    margin-bottom: 20px; /* Отступ снизу блока блюда */
+    width: calc(30% - 20px); /* Ширина блока блюда с учетом отступов */
+    box-shadow: 0 2px 5px rgba(244, 78, 153, 0.622); /* Тень для блока блюда */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Плавный переход цвета фона и рамки при наведении */
+}
+
+/* Эффект при наведении на блок блюда */
+.dish-item:hover {
+    background-color: #f1c16860; /* Цвет фона при наведении на блок блюда */
+    border: 2px solid red; /* Окаймовка красного цвета при наведении */
+}
+
+
+.dish-item p.weight-volume {
+    color: gray; /* Цвет текста на серый для веса/объема блюда */
+}
+.dish-item p.price {
+    font-size: 1.3em; 
+}
+
+.dish-item p.name {
+    font-size: 1.6em;
+   
+}
+.dish-item img {
+    width: 100%; /* Изображение растягивается на всю ширину блока */
+    border-radius: 10px; /* Закругление углов изображения */
+}
+
+/* Названия блюд - центрирование и увеличение шрифта */
+.dish-item p {
+    margin: 10px 0; /* Отступы между параграфами в блоке блюда */
+    text-align: center; /* Центрирование текста названия блюда */
+    font-size: 18px; /* Увеличение размера шрифта названия блюда (можно изменить по желанию) */
+}
+
 /* Кнопки "Добавить" */
 button {
     background-color: #ff9900; /* Цвет фона кнопки */
@@ -99,7 +158,6 @@ footer {
 footer p {
     margin: 5px 0; /* Отступы между параграфами в футере */
 }
-
 /* Стили для ссылок в футере */
 footer a {
     color: #fc146d; /* Цвет ссылок в футере */
@@ -107,50 +165,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; /* Подчеркивание ссылок при наведении в футере */ 
-}
-
-/* Адаптивные стили для мобильных устройств */
-
-@media (max-width: 768px) {
-
-   h1 {
-       font-size: 28px;
-   }
-
-   h2 {
-       font-size: 24px;
-   }
-
-   .dish-item {
-       width: calc(45% - 20px); /* Ширина блока блюда на мобильных устройствах (две колонки)*/
-   }
-
-   nav a {
-       font-size: 14px;
-   }
-
-   button {
-       width: calc(100% - 20px); /* Кнопка занимает всю ширину блока на мобильных устройствах*/
-       margin-top: 10px;
-   }
-}
-
-@media (max-width: 480px) {
-
-   h1 {
-       font-size: 24px;
-   }
-
-   h2 {
-       font-size: 22px;
-   }
-
-   .dish-item {
-       width: calc(100% - 20px); /* Ширина блока блюда на маленьких экранах (одна колонка)*/
-   }
-
-   nav a {
-       font-size: 12px;
-       margin-bottom: 5px;
-   }
 }

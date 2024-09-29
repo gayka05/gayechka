@@ -119,11 +119,12 @@
 
 </main>
 
-   <section>
+  <section>
     <h2>Форма заказа</h2>
     
    <form action="https://httpbin.org/post" method="POST">
        <div class="form-container">
+           <!-- Вертикальная колонка с заказом клиента -->
            <div class="order-section">
                <fieldset>
                    <legend>Ваш заказ</legend>
@@ -158,6 +159,7 @@
                </fieldset>
            </div>
 
+           <!-- Вертикальная колонка с данными клиента -->
            <div class="client-section">
                <fieldset>
                    <legend>Ваши данные</legend>
@@ -174,6 +176,7 @@
                    <label for="address">Адрес:</label>
                    <input type="text" id="address" name="address" required>
 
+                   <!-- Время доставки -->
                    <fieldset>
                        <legend>Время доставки:</legend>
 
@@ -198,7 +201,6 @@
 
    </form >
 </section >
-
     
 <footer id="contacts">
     <p>Контактные данные: <a href="mailto:bus@lunch.ru">bus@lunch.ru</a></p>

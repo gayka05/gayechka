@@ -119,14 +119,14 @@
 
 </main>
 
-    <section>
+   <section>
     <h2>Форма заказа</h2>
     
    <form action="https://httpbin.org/post" method="POST">
        <div class="form-container">
            <div class="order-section">
                <fieldset>
-                   <legend>Заказ клиента</legend>
+                   <legend>Ваш заказ</legend>
 
                    <label for="soup">Суп:</label>
                    <select id="soup" name="soup" required>
@@ -140,16 +140,16 @@
                    <select id="main_course" name="main_course" required>
                        <option value="">Выберите главное блюдо</option>
                        <option value="steak">Стейк</option>
-                       <option value="pasta">Паста</option>
-                       <option value="salad">Салат</option>
+                       <option value="cabbage_rolls">Голубцы</option>
+                       <option value="shashlik">Шашлык</option>
                    </select>
 
                    <label for="drink">Напиток:</label>
                    <select id="drink" name="drink" required>
                        <option value="">Выберите напиток</option>
-                       <option value="water">Вода</option>
-                       <option value="juice">Сок</option>
-                       <option value="wine">Вино</option>
+                       <option value="orange_juice">Апельсиновый сок</option>
+                       <option value="pomegranate_juice">Гранатовый сок</option>
+                       <option value="apple_juice">Яблочный сок</option>
                    </select>
 
                    <label for="comments">Комментарии:</label>
@@ -160,17 +160,13 @@
 
            <div class="client-section">
                <fieldset>
-                   <legend>Данные клиента</legend>
+                   <legend>Ваши данные</legend>
 
                    <label for="name">Имя:</label>
                    <input type="text" id="name" name="name" required>
 
                    <label for="email">Email:</label>
                    <input type="email" id="email" name="email" required>
-
-                   <label for="subscribe">
-                       <input type="checkbox" id="subscribe" name="subscribe" checked> Подписка на рассылку
-                   </label>
 
                    <label for="phone">Телефон:</label>
                    <input type="tel" id="phone" name="phone" required>
@@ -202,6 +198,7 @@
 
    </form >
 </section >
+
     
 <footer id="contacts">
     <p>Контактные данные: <a href="mailto:bus@lunch.ru">bus@lunch.ru</a></p>

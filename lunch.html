@@ -1,155 +1,131 @@
-body {
-    font-family: 'Sofadi One', sans-serif; /* Шрифт */
-    margin: 0; /* Убираем отступы по умолчанию */
-    padding: 0; /* Убираем внутренние отступы по умолчанию */
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Собрать ланч - Gayka Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="lunch.css"> 
+</head>
+<body>
 
-/* Заголовки */
-h1 {
-    text-align: center; /* Центрирование заголовка */
-    font-size: 36px; /* Размер шрифта заголовка */
-    margin: 20px 0; /* Отступы сверху и снизу */
-}
+<header>
+    <h1>Gayka Delivery</h1>
+    <nav style="display: flex; flex-wrap: wrap;">
+        <a href="index.html">Главная</a>
+        <a href="#advantages">Выбор ланча</a>
+        <a href="menu.html">Меню</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#soups">Супы</a>
+        <a href="#main-dishes">Главные блюда</a>
+        <a href="#drinks">Напитки</a>
+    </nav>
+</header>
 
-h2 {
-    font-size: 28px; /* Размер шрифта подзаголовка */
-    margin-top: 30px; /* Отступ сверху для подзаголовка */
-}
+<main>
 
-/* Стили для навигации */
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Центрирование навигации */
-    margin-bottom: 20px; /* Отступ снизу навигации */
-}
+<section id="soups">
+        <h2>Супы</h2>
+        <div class="dish">
+            <div class="dish-content">
+                <img src="sirnisup.jpg" alt="Сырный суп с шампиньонами">
+                <p class="name">Сырный суп с шампиньонами</p>
+                <p class="price">Цена: 300 руб</p>
+                <p class="weight-volume">Объем: 300 мл</p>
+                <button>Добавить</button>
+            </div>
+            <div class="dish-item">
+                <img src="tomyam.jpg" alt="Том Ям">
+                <p class="name">Том Ям </p>
+                <p class="price">Цена: 250 руб.</p>
+                <p class="weight-volume">Объем: 300 мл</p>
+                <button>Добавить</button>
+            </div>
+            <div class="dish-item">
+                <img src="kurinisup.jpg" alt="Куриный суп">
+                <p class="name">Куриный суп </p>
+                <p class="price">Цена: 200 руб.</p>
+                <p class="weight-volume">Объем: 300 мл</p>
+                <button>Добавить</button>
+            </div>
+           
+        </div>
+    </section>
 
-nav a {
-    margin: 10px 15px; /* Отступы между ссылками */
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
-    color: #ef0d82; /* Цвет текста ссылок */
-}
+<section id="main-dishes">
+        <h2>Главные блюда</h2>
+        <div class="dish">
+            <div class="dish-item">
+                <img src="steik.jpg" alt="Стейк">
+                <p class="name">Стейк</p>
+                <p class="price">Цена: 600 руб.</p>
+                <p class="weight-volume">Объем: 450 г</p>
+                <button>Добавить</button>
+            </div>
 
-nav a.active {
-    font-weight: bold; /* Выделение активной ссылки */
-}
+            <div class="dish-item">
+                <img src="голубцы.jpg" alt="Голубцы">
+                <p class="name">Голубцы</p>
+                <p class="price">Цена: 550 руб.</p>
+                <p class="weight-volume">Объем: 300 г</p>
+                <button>Добавить</button>
+            </div>
 
-/* Основной контент */
-main {
-    padding: 20px; /* Внутренние отступы для основного контента */
-}
+            <div class="dish-item">
+                <img src="шашлык.jpg" alt="Шашлык">
+                <p class="name">Шашлык</p>
+                <p class="price">Цена: 600 руб.</p>
+                <p class="weight-volume">Объем: 500 г</p>
+                <button>Добавить</button>
+            </div>
+            
+        </div>
+    </section>
 
-/* Секции с блюдами */
-.dish {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Распределение элементов по строкам */
-}
+<section id="drinks">
+        <h2>Напитки</h2>
+        <div class="dish">
+            <div class="dish-item">
+                <img src="апельсин.jpg" alt="Апельсиновый сок">
+                <p class="name">Апельсиновый сок</p>
+                <p class="price">Цена: 150 руб.</p>
+                <p class="weight-volume">Объем: 300 мл</p>
+                <button>Добавить</button>
+            </div>
+           
 
-/* Блоки блюда */
-.dish-item {
-    background-color: #f9f9f9; /* Цвет фона для блока блюда */
-    border-radius: 10px; /* Закругление углов блока блюда */
-    padding: 15px; /* Внутренние отступы блока блюда */
-    margin-bottom: 20px; /* Отступ снизу блока блюда */
-    width: calc(30% - 20px); /* Ширина блока блюда с учетом отступов */
-    box-shadow: 0 2px 5px rgba(244, 78, 153, 0.622); /* Тень для блока блюда */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Плавный переход цвета фона и рамки при наведении */
-    display: flex; /* Используем Flexbox для центрирования содержимого */
-    flex-direction: column; /* Вертикальное направление элементов внутри блока */
-    align-items: center; /* Центрирование по горизонтали */
-}
+            <div class="ish-item">
+                <img src="гранат.jpg" alt="Гранатовый сок">
+                <p class="name">Гранатовый сок</p>
+                <p class="price">Цена: 150 руб.</p>
+                <p class="weight-volume">Объем: 300 мл</p>
+                <button>Добавить</button>
+            </div>
+                
+            
 
-/* Эффект при наведении на блок блюда */
-.dish-item:hover {
-    background-color: #f1c16860; /* Цвет фона при наведении на блок блюда */
-    border: 2px solid red; /* Окаймовка красного цвета при наведении */
-}
+            <div class="ish-item">
+                <img src="яблоко.jpg" alt="Яблочный сок">
+                <p class="name">Яблочный сок</p>
+                <p class="price">Цена: 150 руб.</p>
+                <p class="weight-volume">Объем: 300 мл</p>
+                <button>Добавить</button>
+            </div>
+            
+        
+        </div>
+    </section>
 
-.dish-item img {
-    width: 100%; /* Изображение растягивается на всю ширину блока */
-    border-radius: 10px; /* Закругление углов изображения */
-}
+</main>
 
-/* Названия блюд - центрирование и увеличение шрифта */
-.dish-item p {
-    margin: 10px 0; /* Отступы между параграфами в блоке блюда */
-    text-align: center; /* Центрирование текста названия блюда */
-}
+<footer id="contacts">
+    <p>Контактные данные: <a href="mailto:bus@lunch.ru">bus@lunch.ru</a></p>
+    <p>Телефон: +7 (495) 123-45-67</p>
+    <p>© 2024 Доставка бизнес-ланчей</p>
+</footer>
 
-/* Кнопки "Добавить" */
-button {
-    background-color: #ff9900; /* Цвет фона кнопки */
-    border: none; /* Убираем рамку кнопки */
-    padding: 10px 20px; /* Внутренние отступы кнопки */
-    border-radius: 5px; /* Закругление углов кнопки */
-    cursor: pointer; /* Курсор при наведении на кнопку */
-}
+<script src="script.js"></script>
 
-button:hover {
-    background-color: #eb1717; /* Цвет фона кнопки при наведении */
-}
-
-/* Футер */
-footer {
-    text-align: center; /* Центрирование текста в футере */
-    padding: 20px 0; /* Внутренние отступы футера */
-}
-
-footer p {
-    margin: 5px 0; /* Отступы между параграфами в футере */
-}
-
-/* Стили для ссылок в футере */
-footer a {
-    color: #fc146d; /* Цвет ссылок в футере */
-}
-
-footer a:hover {
-    text-decoration: underline; /* Подчеркивание ссылок при наведении в футере */ 
-}
-
-/* Адаптивные стили для мобильных устройств */
-
-@media (max-width: 768px) {
-    
-   h1 {
-       font-size: 28px;
-   }
-
-   h2 {
-       font-size: 24px;
-   }
-
-   .dish-item {
-       width: calc(45% - 20px); /* Ширина блока блюда на мобильных устройствах (две колонки)*/
-   }
-
-   nav a {
-       font-size: 14px;
-   }
-
-   button {
-       width: 100%; /* Кнопка занимает всю ширину блока на мобильных устройствах*/
-   }
-}
-
-@media (max-width: 480px) {
-
-   h1 {
-       font-size: 24px;
-   }
-
-   h2 {
-       font-size: 22px;
-   }
-
-   .dish-item {
-       width: calc(100% - 20px); /* Ширина блока блюда на маленьких экранах (одна колонка)*/
-   }
-
-   nav a {
-       font-size: 12px;
-       margin-bottom: 5px;
-   }
-}
+</body>
+</html>

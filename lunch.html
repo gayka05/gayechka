@@ -121,7 +121,7 @@
 
  <section id='order-form'>
     <!-- Форма заказа -->
-    <h2>Форма заказа</h2>
+    <h2>Сделать заказ</h2>
 
    <!-- Контейнер для формы с двумя колонками -->
    <form action='https://httpbin.org/post' method='POST'>
@@ -141,7 +141,14 @@
                    <!-- Пример опций -->
                    <!-- ... -->
                </select>
-
+<div style='display:flex;'>
+           <!-- Поля заказа -->
+           <!-- Главное блюдо -->
+           <fieldset style='flex-basis: 50%; display:flex; flex-direction: column;'>
+               <!-- Поля заказа -->
+               <!-- Главное блюдо -->
+               <label for='soup'>Главное блюдо:</label><br />
+               <!-- Селект для главного блюда -->
                 <select id='main-dishes' name='dishes' required style='margin-bottom:10px;'>
                    <option value="">Выберите главное блюдо</option>
                    <!-- Добавьте другие опции по мере необходимости -->

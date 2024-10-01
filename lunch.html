@@ -141,15 +141,19 @@
                    <!-- Пример опций -->
                    <!-- ... -->
                </select>
-<div style='display:flex;'>
+<!-- Контейнер для формы с двумя колонками -->
+   <form action='https://httpbin.org/post' method='POST'>
+       <!-- Вертикальная колонка с заказом клиента -->
+       <!-- Заказ клиента -->
+       <div style='display:flex;'>
            <!-- Поля заказа -->
            <!-- Главное блюдо -->
            <fieldset style='flex-basis: 50%; display:flex; flex-direction: column;'>
                <!-- Поля заказа -->
                <!-- Главное блюдо -->
-               <label for='soup'>Главное блюдо:</label><br />
-               <!-- Селект для главного блюда -->
-                <select id='main-dishes' name='dishes' required style='margin-bottom:10px;'>
+               <label for='main-dishes'>Главное блюдо:</label><br />
+               <!-- Селект для супа -->
+               <select id='main-dishes' name='main-dishes' required style='margin-bottom:10px;'>
                    <option value="">Выберите главное блюдо</option>
                    <!-- Добавьте другие опции по мере необходимости -->
                    <!-- Пример опций -->
@@ -161,30 +165,6 @@
 
                <!-- Комментарии -->
                <!-- ... (добавьте текстовое поле для комментариев) ... -->
-
-           </fieldset>
-
-           <!-- Вертикальная колонка с данными клиента справа -->
-           <!-- Данные клиента -->
-           <fieldset style='flex-basis: 50%; display:flex; flex-direction: column;'>
-               <!-- Имя -->
-               <label for='name'>Имя:</label><br />
-               <!-- Поле ввода имени -->
-               <input type='text' id='name' name='name' required style='margin-bottom:10px;' />
-
-               <!-- Email -->
-               <!-- ... (добавьте поле ввода email) ... -->
-
-               <!-- Телефон -->
-               <!-- ... (добавьте поле ввода телефона) ... -->
-
-               <!-- Адрес -->
-               <!-- ... (добавьте поле ввода адреса) ... -->
-
-               <!-- Время доставки -->
-               <!-- ... (добавьте селект или радио-кнопки для времени доставки) ... -->
-
-           </fieldset>
 
        </div >
 

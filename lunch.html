@@ -123,49 +123,73 @@
     <h2>Сделать заказ</h2>
 
     <form action='https://httpbin.org/post' method='POST'>
-        <div style='display: flex; flex-direction: column;'>
-            <!-- Суп -->
-            <fieldset style='margin-bottom: 10px;'>
-                <label for='soup'>Суп:</label><br />
-                <select id='soup' name='soup' required style='margin-bottom:10px;'>
-                    <option value="">Выберите суп</option>
-                    <!-- Добавьте другие опции по мере необходимости -->
-                    <!-- Пример опций -->
-                    <!-- ... -->
-                </select>
-            </fieldset>
+        <div style='display: flex;'>
+            <!-- Заказ клиента -->
+            <div style='flex-basis: 50%; display: flex; flex-direction: column;'>
+                <!-- Суп -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='soup'>Суп:</label><br />
+                    <select id='soup' name='soup' required style='margin-bottom:10px;'>
+                        <option value="">Выберите суп</option>
+                        <!-- Добавьте другие опции по мере необходимости -->
+                    </select>
+                </fieldset>
 
-            <!-- Главное блюдо -->
-            <fieldset style='margin-bottom: 10px;'>
-                <label for='main-dishes'>Главное блюдо:</label><br />
-                <select id='main-dishes' name='main-dishes' required style='margin-bottom:10px;'>
-                    <option value="">Выберите главное блюдо</option>
-                    <!-- Добавьте другие опции по мере необходимости -->
-                    <!-- Пример опций -->
-                    <!-- ... -->
-                </select>
-            </fieldset>
+                <!-- Главное блюдо -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='main-dishes'>Главное блюдо:</label><br />
+                    <select id='main-dishes' name='main-dishes' required style='margin-bottom:10px;'>
+                        <option value="">Выберите главное блюдо</option>
+                        <!-- Добавьте другие опции по мере необходимости -->
+                    </select>
+                </fieldset>
 
-            <!-- Напитки -->
-            <fieldset style='margin-bottom: 10px;'>
-                <label for='drinks'>Напитки:</label><br />
-                <select id='drinks' name='drinks' required style='margin-bottom:10px;'>
-                    <option value="">Выберите напиток</option>
-                    <!-- Добавьте другие опции по мере необходимости -->
-                    <!-- Пример опций -->
-                    <!-- ... -->
-                </select>
-            </fieldset>
+                <!-- Напитки -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='drinks'>Напитки:</label><br />
+                    <select id='drinks' name='drinks' required style='margin-bottom:10px;'>
+                        <option value="">Выберите напиток</option>
+                        <!-- Добавьте другие опции по мере необходимости -->
+                    </select>
+                </fieldset>
 
-            <!-- Комментарии к заказу -->
-            <fieldset style='margin-bottom: 10px;'>
-                <label for='comments'>Комментарии к заказу:</label><br />
-                <textarea id='comments' name='comments' rows='4' placeholder='Введите ваши комментарии здесь...' style='width: 100%;'></textarea>
-            </fieldset>
+                <!-- Комментарии к заказу -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='comments'>Комментарии к заказу:</label><br />
+                    <textarea id='comments' name='comments' rows='4' placeholder='Введите ваши комментарии здесь...' style='width: 100%;'></textarea>
+                </fieldset>
 
-            <!-- Кнопки -->
-            <button type='reset'>Сбросить</button>
-            <button type='submit'>Отправить</button>
+                <!-- Кнопки -->
+                <button type='reset'>Сбросить</button>
+                <button type='submit'>Отправить</button>
+            </div>
+
+            <!-- Ваши данные -->
+            <div style='flex-basis: 50%; display: flex; flex-direction: column; padding-left: 20px;'>
+                <!-- Имя -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='name'>Имя:</label><br />
+                    <input type='text' id='name' name='name' required placeholder='Введите ваше имя' style='width: 100%;' />
+                </fieldset>
+
+                <!-- Адрес электронной почты -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='email'>Адрес электронной почты:</label><br />
+                    <input type='email' id='email' name='email' required placeholder='Введите ваш email' style='width: 100%;' />
+                </fieldset>
+
+                <!-- Номер телефона -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='phone'>Номер телефона:</label><br />
+                    <input type='tel' id='phone' name='phone' required placeholder='Введите ваш номер телефона' style='width: 100%;' />
+                </fieldset>
+
+                <!-- Адрес доставки -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='delivery-address'>Адрес доставки:</label><br />
+                    <input type='text' id='delivery-address' name='delivery-address' required placeholder="Введите адрес доставки" style="width: 100%;" />
+                </fieldset>
+            </div>
         </div>
     </form>
 </section>

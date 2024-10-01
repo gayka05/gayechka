@@ -159,6 +159,18 @@
                    <!-- Пример опций -->
                    <!-- ... -->
                </select>
+<!-- Контейнер для формы с двумя колонками -->
+   <form action='https://httpbin.org/post' method='POST'>
+       <!-- Вертикальная колонка с заказом клиента -->
+       <!-- Заказ клиента -->
+       <div style='display:flex;'>
+           <!-- Поля заказа -->
+           <!-- Главное блюдо -->
+           <fieldset style='flex-basis: 50%; display:flex; flex-direction: column;'>
+               <!-- Поля заказа -->
+               <!-- Главное блюдо -->
+               <label for='drinks'>Напитки:</label><br />
+               <!-- Селект для супа -->               
                 <select id='drinks' name='drinks' required style='margin-bottom:10px;'>
                    <option value="">Выберите напиток</option>
                    <!-- Добавьте другие опции по мере необходимости -->

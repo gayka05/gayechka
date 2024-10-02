@@ -118,7 +118,6 @@
     </section>
 
 </main>
-
 <section id='order-form'>
     <h2>Сделать заказ</h2>
 
@@ -192,13 +191,30 @@
                     <input type='text' id='delivery-address' name='delivery-address' required placeholder="Введите адрес доставки" style="width: 100%;" />
                 </fieldset>
 
-                <!-- Checkbox для получения информации о скидках и акциях -->
+                <!-- Уведомление о доставке только по Москве -->
+                <p style="color: red; font-weight: bold;">Доставка осуществляется только по Москве.</p>
+
+                <!-- Время доставки -->
                 <fieldset style="margin-bottom: 10px;">
+                    <legend>Время доставки:</legend>
                     <label>
-                        <input type="checkbox" id="subscribe" name="subscribe" /> 
-                        Получать информацию о скидках и акциях
+                        <input type="radio" id="as-soon-as-possible" name="delivery-time" value="as-soon-as-possible" checked /> 
+                        Как можно скорее
+                    </label><br />
+                    <label>
+                        <input type="radio" id="at-specified-time" name="delivery-time" value="at-specified-time" /> 
+                        К указанному времени
                     </label>
                 </fieldset>
+
+                <!-- Укажите время доставки -->
+                <fieldset style="margin-bottom: 10px;">
+                    <label for="specific-time">Укажите время доставки:</label><br />
+                    <input type="text" id="specific-time" name="specific-time" placeholder="Введите время доставки (например, 15:00)" style="width: 100%;" />
+                </fieldset>
+
+                <!-- Уведомление о круглосуточной доставке -->
+                <p style="font-style: italic;">Круглосуточно</p>
             </div>
         </div>
     </form>

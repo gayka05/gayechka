@@ -42,7 +42,7 @@ nav a:hover {
 }
 
 nav a.active {
-    background-color: #ef0d82; /* Цвет фона для активной ссылки */
+ 
     color: white; /* Цвет текста для активной ссылки */
 }
 

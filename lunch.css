@@ -40,72 +40,26 @@ main {
     padding: 20px; /* Внутренние отступы для основного контента */
 }
 
-/* Секции с блюдами */
-.dish {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Распределение элементов по строкам */
-}
-
-.dish-item {
-    background-color: #f9f9f9; /* Цвет фона для блока блюда */
-    border-radius: 10px; /* Закругление углов блока блюда */
-    padding: 15px; /* Внутренние отступы блока блюда */
-    margin-bottom: 20px; /* Отступ снизу блока блюда */
-    width: calc(30% - 20px); /* Ширина блока блюда с учетом отступов */
-    box-shadow: 0 2px 5px rgba(244, 78, 153, 0.622); /* Тень для блока блюда */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Плавный переход цвета фона и рамки при наведении */
-    display: flex; /* Используем Flexbox для центрирования содержимого */
-    flex-direction: column; /* Вертикальное направление элементов внутри блока */
-    align-items: center; /* Центрирование по горизонтали */
-}
-
-/* Эффект при наведении на блок блюда */
-.dish-item:hover {
-    background-color: #f1c16860; /* Цвет фона при наведении на блок блюда */
-    border: 2px solid red; /* Окаймовка красного цвета при наведении */
-}
-
-.dish-item img {
-    width: 100%; /* Изображение растягивается на всю ширину блока */
-    border-radius: 10px; /* Закругление углов изображения */
-}
-
-/* Названия блюд - центрирование и увеличение шрифта */
-.dish-item p {
-    margin: 10px 0; /* Отступы между параграфами в блоке блюда */
-    text-align: center; /* Центрирование текста названия блюда */
-}
-
-/* Кнопки "Добавить" */
-button {
-    background-color: #ff9900; /* Цвет фона кнопки */
-    border: none; /* Убираем рамку кнопки */
-    padding: 10px 20px; /* Внутренние отступы кнопки */
-    border-radius: 5px; /* Закругление углов кнопки */
-    cursor: pointer; /* Курсор при наведении на кнопку */
-}
-
-button:hover {
-    background-color: #eb1717; /* Цвет фона кнопки при наведении */
-}
 /* Форма заказа с двумя вертикальными колонками */
 .form-container {
     display: flex;
+    justify-content: space-between; /* Распределение колонок по ширине */
 }
 
 .order-section,
 .client-section {
-    flex-basis: 50%; /* Ширина колонок (50% для каждой) */
+    flex-basis: 48%; /* Ширина колонок (48% для каждой) */
+    background-color: #ffffff; /* Цвет фона для секций с данными и заказом */
+    border-radius: 8px; /* Закругление углов блока */
+    padding: 20px; /* Внутренние отступы блока */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для блока */
+    margin-bottom: 20px; /* Отступ снизу блока */
 }
 
-.order-section,
-.client-section {
-    padding-right: 20px; /* Отступ между колонками (для первой колонки) */ 
-}
-
-.client-section {
-   padding-left: 20px; /* Отступ между колонками (для второй колонки) */ 
+/* Заголовки в колонках данных и заказа*/
+.order-section h3,
+.client-section h3 {
+    color: #333;
 }
 
 /* Поля ввода и селекты в форме заказа и данных клиента*/
@@ -122,6 +76,27 @@ textarea {
    margin-bottom: 15px; /* Отступ между полями ввода */ 
 }
 
+/* Эффект при наведении на поля ввода */
+input[type='text']:hover,
+input[type='email']:hover,
+input[type='tel']:hover,
+select:hover,
+textarea:hover {
+   border-color: #ef0d82; /* Цвет рамки при наведении на поля ввода */
+}
+
+/* Кнопки "Добавить" и отправить/сбросить */
+button {
+    background-color: #ff9900; /* Цвет фона кнопки */
+    border: none; /* Убираем рамку кнопки */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    border-radius: 5px; /* Закругление углов кнопки */
+    cursor: pointer; /* Курсор при наведении на кнопку */
+}
+
+button:hover {
+    background-color: #eb1717; /* Цвет фона кнопки при наведении */
+}
 
 /* Футер */
 footer {
@@ -151,6 +126,6 @@ footer a:hover {
     font-size: 1.3em;
 }
 
-.dish-item p.name {
+.dish-item p.name { 
     font-size: 1.6em;
 }

@@ -36,6 +36,10 @@ nav a {
 nav a:hover {
     color: #ffe100;
 }
+nav a.active {
+    background-color: #ef0d82; /* Цвет фона для активной ссылки */
+    color: white; /* Цвет текста для активной ссылки */
+}
 
 main {
     padding: 20px;

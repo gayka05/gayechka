@@ -20,22 +20,27 @@ h1 {
     margin: 0;
 }
 
+/* Стили для навигации */
 nav {
-    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрирование навигации */
+    margin-bottom: 20px; /* Отступ снизу навигации */
 }
 
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    font-family: 'Sofadi One', monospace;
-    font-size: 1.2em;
-    color: rgb(187, 69, 116);
-    transition: color 0.3s;
+    margin: 10px 15px; /* Отступы между ссылками */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #ef0d82; /* Цвет текста ссылок */
+    padding: 10px 15px; /* Внутренние отступы для создания кнопочного эффекта */
+    border-radius: 5px; /* Закругление углов */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
 }
 
 nav a:hover {
-    color: #ffe100;
+    background-color: rgba(239, 13, 130, 0.1); /* Цвет фона при наведении */
 }
+
 nav a.active {
     background-color: #ef0d82; /* Цвет фона для активной ссылки */
     color: white; /* Цвет текста для активной ссылки */

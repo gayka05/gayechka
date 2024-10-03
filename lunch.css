@@ -328,6 +328,60 @@ button:hover {
     background-color: #eb1717; /* Цвет фона кнопки при наведении */
 }
 
+@media (max-width: 800px) {
+    .dish-item {
+        width: calc(33.33% - 20px); /* Три колонки на экранах до 800px */
+        text-align: center;
+    }
+}
+
+/* Для экранов шириной ≤600px */
+@media (max-width: 600px) {
+    h2 {
+        text-align: center; /* Центрирование заголовка раздела */
+    }
+
+    nav {
+        flex-direction: column; /* Вертикальное направление элементов в навигации */
+        align-items: center; /* Центрирование флекс-элементов по поперечной оси */
+    }
+
+    nav a {
+        font-size: calc(16px + 4px); /* Увеличение шрифта для ссылок на 4px */
+        margin-bottom: 10px;
+    }
+
+    .dish-item {
+        width: calc(50% - 20px); /* Две колонки на экранах до 600px */
+        text-align: center;
+    }
+}
+
+/* Для экранов шириной ≤400px (дополнительно для главной страницы)*/
+@media (max-width: 400px) {
+    h1 {
+        text-align: center; /* Центрирование главного заголовка страницы */
+        font-size: 24px; 
+    }
+
+    .dish-item {
+        width: calc(100% - 20px); /* Одна колонка на экранах до 400px */
+        text-align: center;
+    }
+
+   input[type='text'],
+   input[type='email'],
+   input[type='tel'],
+   select,
+   textarea,
+   input[type='time'] {
+       font-size: calc(14px - 2px); /* Уменьшение шрифта на 2 пикселя для текстовых полей и селектов */ 
+       height: auto;
+       padding: 8px;
+       width: calc(100% - 16px);
+       margin-bottom: 10px;
+   }
+}
 /* Футер */
 footer {
     text-align: center; /* Центрирование текста в футере */

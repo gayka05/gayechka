@@ -189,10 +189,11 @@
                 <fieldset style='margin-bottom: 10px;'>
                     <label for='delivery-address'>Адрес доставки:</label><br />
                     <input type='text' id='delivery-address' name='delivery-address' required placeholder="Введите адрес доставки" style="width: 100%;" />
+                     <p style="color: black; font-style: italic;">Доставка осуществляется только по Москве.</p>
                 </fieldset>
 
                 <!-- Уведомление о доставке только по Москве -->
-                <p style="color: black; font-style: italic;">Доставка осуществляется только по Москве.</p>
+               
 
                 <!-- Время доставки -->
                 <fieldset style="margin-bottom: 10px;">
@@ -207,11 +208,11 @@
                     </label>
                 </fieldset>
 
-                <!-- Укажите время доставки -->
                 <fieldset style="margin-bottom: 10px;">
-                    <label for="specific-time">Укажите время доставки:</label><br />
-                    <input type="text" id="specific-time" name="specific-time" placeholder="Введите время доставки (например, 15:00)" style="width: 100%;" />
-                </fieldset>
+            <label for="specific-time">Укажите время доставки:</label><br />
+            <input type="time" id="specific-time" name="specific-time" required style="width: 100%;" min="07:00" max="23:00" step="300" />
+            <!-- step="300" соответствует шагу в 5 минут (300 секунд) -->
+        </fieldset>
 
                 <!-- Уведомление о круглосуточной доставке -->
                 <p style="font-style: italic;">Круглосуточно</p>

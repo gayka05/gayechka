@@ -48,6 +48,41 @@ main {
     padding: 20px; /* Внутренние отступы для основного контента */
 }
 
+/* Фон для блока "Сделать заказ" */
+#order-form {
+    background-color: #ffe6b2; /* Бледно-оранжевый цвет фона */
+    padding: 20px; /* Внутренние отступы для блока */
+    border-radius: 8px; /* Закругление углов */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для блока */
+}
+
+/* Поля ввода и селекты в форме заказа и данных клиента */
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select,
+textarea {
+    width: calc(100% - 22px);
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px; /* Отступ между полями ввода */
+    background-color: #ffe6b2; /* Бледно-оранжевый фон для полей ввода */
+}
+
+/* Кнопки "Добавить" и отправить/сбросить */
+button {
+    background-color: #ff9900; /* Цвет фона кнопки */
+    border: none; /* Убираем рамку кнопки */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    border-radius: 5px; /* Закругление углов кнопки */
+    cursor: pointer; /* Курсор при наведении на кнопку */
+}
+
+button:hover {
+    background-color: #eb1717; /* Цвет фона кнопки при наведении */
+} 
 /* Форма заказа с двумя вертикальными колонками */
 .form-container {
     display: flex;

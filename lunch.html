@@ -25,7 +25,7 @@
 
 </section id="soups">
 <section id="soups">
-    
+
         <h2>Супы</h2>
         <div class="dish">
             <div class="dish-item">
@@ -120,55 +120,53 @@
 
 </main>
 <section id='order-form'>
-    <h2>Сделать заказ</h2>
+    <h2 style="text-align: center;">Сделать заказ</h2>
 
     <form action='https://httpbin.org/post' method='POST'>
-        <!-- Супы -->
-        <fieldset>
-            <label for='soup'>Суп:</label>
-            <select id='soup' name='soup' required style='margin-bottom:10px;'>
-                <option value="">Выберите суп</option>
-                <option value="cheese-soup">Сырный суп</option>
-                <option value="tom-yam">Том Ям</option>
-                <option value="chicken-soup">Куриный суп</option>
-            </select>
-        </fieldset>
+        <div style='display: flex;'>
+            <!-- Колонка Ваш заказ -->
+            <div style='flex-basis: 50%; padding-right: 20px;'>
+                <h3>Ваш заказ</h3>
+                <!-- Суп -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='soup'>Суп:</label><br />
+                    <select id='soup' name='soup' required style='margin-bottom:10px;'>
+                        <option value="">--Выберите суп--</option>
+                        <option value="">Сырный суп</option>
+                        <option value="">Том Ям</option>
+                        <option value="">Куриный суп</option>
+                    </select>
+                </fieldset>
 
-        <!-- Главное блюдо -->
-        <fieldset>
-            <label for='main-dishes'>Главное блюдо:</label>
-            <select id='main-dishes' name='main-dishes' required style='margin-bottom:10px;'>
-                <option value="">Выберите главное блюдо</option>
-                <option value="steak">Стейк</option>
-                <option value="cabbage-rolls">Голубцы</option>
-                <option value="shashlik">Шашлык</option>
-            </select>
-        </fieldset>
+                <!-- Главное блюдо -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='main-dishes'>Главное блюдо:</label><br />
+                    <select id='main-dishes' name='main-dishes' required style='margin-bottom:10px;'>
+                        <option value="">--Выберите главное блюдо--</option>
+                        <option value="">Голубцы</option>
+                        <option value="">Стейк</option>
+                        <option value="">Шашлык</option>
+                    </select>
+                </fieldset>
 
-        <!-- Напитки -->
-        <fieldset>
-            <label for='drinks'>Напитки:</label>
-            <select id='drinks' name='drinks' required style='margin-bottom:10px;'>
-                <option value="">Выберите напиток</option>
-                <option value="orange-juice">Апельсиновый сок</option>
-                <option value="pomegranate-juice">Гранатовый сок</option>
-                <option value="apple-juice">Яблочный сок</option>
-            </select>
-        </fieldset>
+                <!-- Напитки -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='drinks'>Напитки:</label><br />
+                    <select id='drinks' name='drinks' required style='margin-bottom:10px;'>
+                        <option value="">--Выберите напиток--</option>
+                        <option value="">Апельсиновый сок</option>
+                        <option value="">Яблочный сок</option>
+                        <option value="">Гранатовый сок</option>
+                    </select>
+                </fieldset>
 
-        <!-- Комментарии к заказу -->
-        <fieldset>
-            <label for='comments'>Комментарии к заказу:</label><br />
-            <textarea id='comments' name='comments' rows='4' placeholder='Введите ваши комментарии здесь...' style='width: 100%;'></textarea>
-        </fieldset>
+                <!-- Комментарии к заказу -->
+                <fieldset style='margin-bottom: 10px;'>
+                    <label for='comments'>Комментарии к заказу:</label><br />
+                    <textarea id='comments' name='comments' rows='4' placeholder='Введите ваши комментарии здесь...' style='width: 100%;'></textarea>
+                </fieldset>
+            </div>
 
-        <!-- Кнопки отправки -->
-        <div style="text-align: center; margin-top: 20px;">
-            <button type="reset">Сбросить</button>
-            <button type="submit">Отправить</button>
-        </div>
-    </form>
-</section>
             <!-- Колонка Ваши данные -->
             <div style='flex-basis: 50%;'>
                 <h3>Ваши данные</h3>
@@ -230,7 +228,7 @@
         </div>
     </form>
 </section>
-    
+
 <footer id="contacts">
     <p>Контактные данные: <a href="mailto:bus@lunch.ru">bus@lunch.ru</a></p>
     <p>Телефон: +7 (495) 123-45-67</p>

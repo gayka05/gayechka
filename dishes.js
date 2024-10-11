@@ -64,3 +64,5 @@ const dishes = [
         image: "drinks/гранат.jpg"
     }
 ];
+
+dishes.sort((a, b) => a.name.localeCompare(b.name));

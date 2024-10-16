@@ -130,9 +130,9 @@
                     <label for='soup'>Суп:</label><br />
                     <select id='soup' name='sup' required style='margin-bottom:10px;'>
                         <option value="">--Выберите суп--</option>
-                        <option value="">Сырный суп</option>
-                        <option value="">Том Ям</option>
-                        <option value="">Куриный суп</option>
+                        <option value="Сырный суп">Сырный суп</option>
+                        <option value="Том Ям">Том Ям</option>
+                        <option value="Куриный суп">Куриный суп</option>
                     </select>
                 </fieldset>
 
@@ -141,9 +141,9 @@
                     <label for='main-dish'>Главное блюдо:</label><br />
                     <select id='main-dish' name='main' required style='margin-bottom:10px;'>
                         <option value="">--Выберите главное блюдо--</option>
-                        <option value="">Голубцы</option>
-                        <option value="">Стейк</option>
-                        <option value="">Шашлык</option>
+                        <option value="Голубцы">Голубцы</option>
+                        <option value="Стейк">Стейк</option>
+                        <option value="Шашлык">Шашлык</option>
                     </select>
                 </fieldset>
 
@@ -152,11 +152,12 @@
                     <label for='drink'>Напитки:</label><br />
                     <select id='drink' name='drink' required style='margin-bottom:10px;'>
                         <option value="">--Выберите напиток--</option>
-                        <option value="">Апельсиновый сок</option>
-                        <option value="">Яблочный сок</option>
-                        <option value="">Гранатовый сок</option>
+                        <option value="Апельсиновый сок">Апельсиновый сок</option>
+                        <option value="Яблочный сок">Яблочный сок</option>
+                        <option value="Гранатовый сок">Гранатовый сок</option>
                     </select>
                 </fieldset>
+
                 <div id="total-cost" style="display: none;">
                     <h3>Стоимость заказа:</h3>
                     <p id="cost-value">$0.00</p>
@@ -197,9 +198,6 @@
                      <p style="color: black; font-style: italic;">Доставка осуществляется только по Москве.</p>
                 </fieldset>
 
-                <!-- Уведомление о доставке только по Москве -->
-
-
                 <!-- Время доставки -->
                 <fieldset style="margin-bottom: 10px;">
                     <legend>Время доставки:</legend>
@@ -213,29 +211,30 @@
                     </label>
                 </fieldset>
 
+                <!-- Укажите время доставки -->
                 <fieldset style="margin-bottom: 10px;">
-           <label for="delivery-time">Укажите время доставки:</label>
-              <input
-                type="time"
-                id="delivery-time"
-                name="delivery_time_input"
-                min="07:00"
-                max="23:00"
-                step="300"
-              />
-        </fieldset>
+                   <label for="delivery-time">Укажите время доставки:</label>
+                   <input
+                     type="time"
+                     id="delivery-time"
+                     name="delivery_time_input"
+                     min="07:00"
+                     max="23:00"
+                     step="300"
+                   />
+               </fieldset>
 
-                <!-- Уведомление о круглосуточной доставке -->
-                <p style="font-style: italic;">Доступное время доставки с 7:00 до 23:00</p>
-            </div>
-        </div>
+               <!-- Уведомление о круглосуточной доставке -->
+               <p style="font-style: italic;">Доступное время доставки с 7:00 до 23:00</p>
+           </div>
+       </div>
 
-        <!-- Кнопки в самом низу формы, отцентрированные -->
-        <div style="text-align: center; margin-top: 20px;">
-            <button type="reset">Сбросить</button>
-            <button type="submit">Отправить</button>
-        </div>
-    </form>
+       <!-- Кнопки в самом низу формы, отцентрированные -->
+       <div style="text-align: center; margin-top: 20px;">
+           <button type="reset">Сбросить</button>
+           <button type="submit">Отправить</button>
+       </div>
+   </form>
 </section>
 
 <footer id="contacts">

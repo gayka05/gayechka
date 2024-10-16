@@ -1,4 +1,3 @@
-
 // Хранит выбранные блюда
 const selectedDishes = {
     soup: null,

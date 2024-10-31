@@ -17,9 +17,9 @@ body {
 }
 
 header {
-    background-color:  #ed7c03;
+    background-color:  #ff9900;
     /*background: #ffffff url("bg.webp") no-repeat top center;*/
-    color: rgb(255, 0, 102);
+    color: rgb(255, 255, 255);
     padding: 20px 0;
 }
 
@@ -81,7 +81,7 @@ section {
 h2 {
     margin-bottom: 15px;
     font-size: 2em;
-    color: #ff9900;
+    color: #ffffff;
 }
 
 ul {
@@ -101,13 +101,13 @@ th, td {
 }
 
 th {
-    background-color: #ff0059;
+    background-color: #ffb300;
     color: white;
 }
 
 footer {
-    background-color: rgb(255, 153, 0);
-    color: rgb(255, 0, 60);
+    background-color: rgb(255, 0, 81);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;

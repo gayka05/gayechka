@@ -3,10 +3,10 @@
 function displayDishes() {
     const categories = {};
 
-    // Sort dishes alphabetically within each category
+
     dishes.sort((a, b) => a.name.localeCompare(b.name));
 
-    // Group dishes by category
+
     dishes.forEach(dish => {
         if (!categories[dish.category]) {
             categories[dish.category] = [];
@@ -14,7 +14,7 @@ function displayDishes() {
         categories[dish.category].push(dish);
     });
 
-    // Create HTML for each category
+
     for (const [category, items] of Object.entries(categories)) {
         const section = document.createElement('section');
         const header = document.createElement('h2');
@@ -65,10 +65,10 @@ function displayDishes() {
 
 function addToOrder(item) {
     const orderContainer = document.getElementById("order");
-    const dishCategory = item.category + "s"; // e.g., "soups"
+    const dishCategory = item.category + "s"; 
     const categoryDiv = document.getElementById(dishCategory);
-    
-    // Clear existing message if there is one
+
+
     const existingMessage = categoryDiv.querySelector("p");
     if (existingMessage) {
         existingMessage.remove();
@@ -81,28 +81,14 @@ function addToOrder(item) {
     updateTotalPrice();
 }
 
-/** 
-function updateTotalPrice() {
-    const orderItems = document.querySelectorAll("#order div");
-    let total = 0;
-    
-    orderItems.forEach(item => {
-        const priceText = item.textContent.split(" - ")[1];
-        total += parseInt(priceText);
-    });
 
-    const totalPriceDiv = document.getElementById("total-price");
-    totalPriceDiv.textContent = `${total} ₽`;
-}*/
-
-// Initialize the dish display
 displayDishes();
 
-// Giỏ hàng
+
 const cart = [];
 let totalPrice = 0;
 
-// Hàm thêm món vào giỏ hàng
+
 function addToCart(name, price) {
     document.getElementById('order').style.display = 'block';
     document.getElementById('no-dishes').style.display = 'none';
@@ -111,20 +97,20 @@ function addToCart(name, price) {
     updateCart();
 }
 
-// Cập nhật giỏ hàng hiển thị
+
 function updateCart() {
-    // Cập nhật tổng tiền
+
     document.getElementById('total-price').textContent = `${totalPrice} ₽`;
 }
 
-// Tìm tất cả các nút "Добавить" và thêm sự kiện cho chúng
+
 document.querySelectorAll('.add-to-cart').forEach(button => {
     button.addEventListener('click', () => {
-        // Lấy thông tin tên món và giá từ các phần tử tương ứng
+
         const dishName = button.previousElementSibling.previousElementSibling.textContent;
         const dishPrice = parseInt(button.previousElementSibling.textContent.replace(' ₽', ''));
 
-        // Gọi hàm thêm vào giỏ hàng
+
         addToCart(dishName, dishPrice);
     });
 });

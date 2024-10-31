@@ -3,120 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Собрать ланч - Gayka Delivery</title>
     <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Основные стили -->
-    <link rel="stylesheet" href="lunch.css"> <!-- Дополнительные стили для страницы Собрать ланч -->
+    <title>Собрать ланч</title>
+    <link rel="stylesheet" href="lunch.css">
+    <link rel="stylesheet" href="order.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Gayka Delivery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">О нас</a></li>
+                    <li><a href="lunch.html" class="active">Собрать ланч</a></li>
+                    <li><a href="order.html">Заказы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <h1>Gayka Delivery</h1>
-    <nav style="display: flex; flex-wrap: wrap;">
-        <a href="index.html">Главная</a>
-        <a href="#advantages">Выбор ланча</a>
-        <a href="#contacts">Контакты</a>
-        <a href="order.html">Заказы</a>
-        <a href="#contacts" class="active">Собрать ланч</a>
-    </nav>
-</header>
-
-<main>
-
-<section id="soups">
-
+    <section>
         <h2>Супы</h2>
-        <div class="dish">
-            <div class="dish-item">
-                <img src="sirnisup.jpg" alt="Сырный суп">
-                <p class="name">Сырный суп</p>
-                <p class="price">Цена: 300 руб</p>
-                <p class="weight-volume">Объем: 300 мл</p>
-                <button>Добавить</button>
-            </div>
-            <div class="dish-item">
-                <img src="tomyam.jpg" alt="Том Ям">
-                <p class="name">Том Ям </p>
-                <p class="price">Цена: 250 руб.</p>
-                <p class="weight-volume">Объем: 300 мл</p>
-                <button>Добавить</button>
-            </div>
-            <div class="dish-item">
+        <div class="dish-grid">
+            <div class="dish">
                 <img src="kurinisup.jpg" alt="Куриный суп">
-                <p class="name">Куриный суп </p>
-                <p class="price">Цена: 200 руб.</p>
-                <p class="weight-volume">Объем: 300 мл</p>
-                <button>Добавить</button>
+                <p class="price">450 ₽</p>
+                <p class="dish-name">Куриный суп</p>
+                <p class="dish-weight">700 мл</p>
+                <button class="add-to-cart">Добавить</button>
             </div>
-
+            <div class="dish">
+                <img src="sirnisup.jpg" alt="Сырный суп">
+                <p class="price">450 ₽</p>
+                <p class="dish-name">Сырный суп</p>
+                <p class="dish-weight">700 мл</p>
+                <button class="add-to-cart">Добавить</button>
+            </div>
+            <div class="dish">
+                <img src="tomyam.jpg" alt="Том Ям">
+                <p class="price">550 ₽</p>
+                <p class="dish-name">Том Ям</p>
+                <p class="dish-weight">750 мл</p>
+                <button class="add-to-cart">Добавить</button>
+            </div>
         </div>
     </section>
 
-<section id="main-dishes">
-        <h2>Главные блюда</h2>
-        <div class="dish">
-            <div class="dish-item">
+
+    <section>
+        <h2>Основные блюда</h2>
+        <div class="dish-grid">
+            <div class="dish">
                 <img src="steik.jpg" alt="Стейк">
-                <p class="name">Стейк</p>
-                <p class="price">Цена: 600 руб.</p>
-                <p class="weight-volume">Объем: 450 г</p>
-                <button>Добавить</button>
+                <p class="price">550 ₽</p>
+                <p class="dish-name">Стейк</p>
+                <p class="dish-weight">500 мг</p>
+                <button class="add-to-cart">Добавить</button>
             </div>
-
-            <div class="dish-item">
-
+            <div class="dish">
                 <img src="голубцы.jpg" alt="Голубцы">
-                <p class="name">Голубцы</p>
-                <p class="price">Цена: 550 руб.</p>
-                <p class="weight-volume">Объем: 300 г</p>
-                <button>Добавить</button>
+                <p class="price">550 ₽</p>
+                <p class="dish-name">Голубцы</p>
+                <p class="dish-weight">500 мг</p>
+                <button class="add-to-cart">Добавить</button>
             </div>
-
-            <div class="dish-item">
+            <div class="dish">
                 <img src="шашлык.jpg" alt="Шашлык">
-                <p class="name">Шашлык</p>
-                <p class="price">Цена: 600 руб.</p>
-                <p class="weight-volume">Объем: 500 г</p>
-                <button>Добавить</button>
+                <p class="price">550 ₽</p>
+                <p class="dish-name">Шашлык</p>
+                <p class="dish-weight">500 мг</p>
+                <button class="add-to-cart">Добавить</button>
             </div>
-
         </div>
     </section>
-    <section id="drinks">
+
+    <section>
         <h2>Напитки</h2>
-        <div class="dish">
-            <div class="dish-item">
-
+        <div class="dish-grid">
+            <div class="dish">
                 <img src="апельсин.jpg" alt="Апельсиновый сок">
-                <p class="name">Апельсиновый сок</p>
-                <p class="price">Цена: 150 руб.</p>
-                <p class="weight-volume">Объем: 300 мл</p>
-                <button>Добавить</button>
+                <p class="price">70 ₽</p>
+                <p class="dish-name">Апельсиновый сок</p>
+                <p class="dish-weight">120 мл</p>
+                <button class="add-to-cart">Добавить</button>
             </div>
-
-            <div class="dish-item">
-
-                <img src="гранат.jpg" alt="Гранатовый сок">
-                <p class="name">Гранатовый сок</p>
-                <p class="price">Цена: 150 руб.</p>
-                <p class="weight-volume">Объем: 300 мл</p>
-                <button>Добавить</button>
-            </div>
-
-            <div class="dish-item">
-
+            <div class="dish">
                 <img src="яблоко.jpg" alt="Яблочный сок">
-                <p class="name">Яблочный сок</p>
-                <p class="price">Цена: 150 руб.</p>
-                <p class="weight-volume">Объем: 300 мл</p>
-                <button>Добавить</button>
+                <p class="price">180 ₽</p>
+                <p class="dish-name">Яблочный сок</p>
+                <p class="dish-weight">200 мл</p>
+                <button class="add-to-cart">Добавить</button>
             </div>
-
+            <div class="dish">
+                <img src="гранат.jpg" alt="Гранатовый сок">
+                <p class="price">180 ₽</p>
+                <p class="dish-name">Гранатовый сок</p>
+                <p class="dish-weight">200 мл</p>
+                <button class="add-to-cart">Добавить</button>
+            </div>
         </div>
     </section>
-
-</main>
- <section class="order-form"></section>
+    
+    <section class="order-form"></section>
         <h2>Форма заказа</h2>
 
         <form action="https://httpbin.org/post" method="POST">
@@ -125,25 +114,25 @@
                 <label for="soup">Суп:</label>
                 <select id="soup" name="soup" required>
                     <option value="">--Выберите суп--</option>
-                    <option value="phobo">Сырный суп</option>
-                    <option value="phoga">Том Ям</option>
-                    <option value="buntom">Куриный суп</option>
+                    <option value="kuri">Куриный суп</option>
+                    <option value="sir">Сырный суп</option>
+                    <option value="tomyam">Том Ям</option>
                 </select>
 
                 <label for="main">Основное блюдо:</label>
                 <select id="main" name="main" required>
                     <option value="">--Выберите основное блюдо--</option>
-                    <option value="buntron">Стейк</option>
-                    <option value="comdui">Голубцы</option>
-                    <option value="comtom">Шашлык</option>
+                    <option value="steik">Стейк</option>
+                    <option value="dolma">Голубцы</option>
+                    <option value="shashlik">Шашлык</option>
                 </select>
 
                 <label for="drink">Напиток:</label>
                 <select id="drink" name="drink" required>
                     <option value="">--Выберите напиток--</option>
-                    <option value="tra">Яблочный сок</option>
-                    <option value="cafeden">Апельсиновый сок</option>
-                    <option value="cafesua">Гранатовый сок</option>
+                    <option value="apel">Апельсиновый сок</option>
+                    <option value="yabl">Яблочный сок</option>
+                    <option value="gran">Гранатовый сок</option>
                 </select>
 
                 <label for="comments">Комментарий к заказу:</label>
@@ -195,11 +184,11 @@
             </fieldset>
         </form>
     </section>
-<footer id="contacts">
-    <p>Контактные данные: <a href="mailto:bus@lunch.ru">bus@lunch.ru</a></p>
-    <p>Телефон: +7 (495) 123-45-67</p>
-    <p>© 2024 Доставка бизнес-ланчей</p>
-</footer>
-    
+
+    <footer id="contact">
+        <p>Контактные данные: <a href="email:bus@lunch.ru">bus@lunch.ru</a></p>
+        <p>Телефон: +7 (495) 123-45-67</p>
+        <p>© 2024 Доставка бизнес-ланчей</p>
+    </footer>
 </body>
 </html>

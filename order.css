@@ -101,12 +101,12 @@ th, td {
 }
 
 th {
-    background-color: #ffb300;
+    background-color: #ff0073;
     color: white;
 }
 
 footer {
-    background-color: rgb(255, 0, 81);
+    background-color: rgb(255, 174, 0);
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px 0;

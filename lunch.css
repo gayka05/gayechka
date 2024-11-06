@@ -52,12 +52,12 @@ section > div > div > button {
 
 section > div > div > button:hover {
     text-decoration: none;
-    background-color: #ff0077;
+    background-color: #cbd32f;
 }
 
 section > div > div > button:active {
     text-decoration: none;
-    background-color: #ffb917;
+    background-color: #ffbd07;
 }
 
 p.note {
@@ -114,12 +114,12 @@ button:hover {
 }
 
 .filter:hover {
-    color: #ffa51e;
+    color: #ffc412;
     font-weight: bold;
 }
 
 .filter.active {
-    color: #ffa51e;
+    color: #ffc824;
     font-weight: bold;
 }
 

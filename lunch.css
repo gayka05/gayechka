@@ -1,1 +1,135 @@
-
+section > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px 40px;
+  }
+  
+  section > div > div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 35px;
+    background-color: #f6d9d9;
+    cursor: pointer;
+    filter: drop-shadow(17px 19px 24px #f6d9d9);
+    transition: border 0.3s, background-color 0.3s;
+  }
+  
+  section > div > div:hover {
+    border: 2px solid tomato;
+  }
+  
+  section > div > div > img {
+    width: 100%;
+    border-radius: 35px;
+  }
+  
+  section > div > div > p {
+    margin: 5px 0;
+  }
+  
+  section > div > div > p.price {
+    font-size: 1.5em; /* Увеличение размера шрифта для цены */
+  }
+  
+  section > div > div > p.dish-name {
+    font-size: 1.5em; /* Увеличение размера шрифта для названия блюда */
+  }
+  
+  section > div > div > p.dish-weight {
+    color: gray; /* Изменение цвета текста на серый для веса/объема */
+  }
+  
+  section > div > div > button {
+    background-color: #f3b9d3;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: auto; /* Сдвигаем кнопку вниз */
+    transition: background-color 0.3s;
+  }
+  
+  section > div > div > button:hover {
+    text-decoration: none;
+    background-color: #f7a5c4;
+  }
+  
+  section > div > div > button:active {
+    text-decoration: none;
+    background-color: #e7679a;
+  }
+  
+  p.note {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  
+  legend {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+  
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  fieldset {
+    width: 45%;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  input, select, textarea {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #e7679a;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #f3b9d3;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #f7a5c4;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 800px) {
+    section > div {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    }
+  
+    nav {
+        flex-direction: column;
+        align-items: center; /* Центрируем элементы в навигации */
+    }
+  
+    nav a {
+        font-size: 12px; /* Увеличиваем шрифт на 4px */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    section > div {
+        grid-template-columns: repeat(1, 1fr); /* 1 колонка */
+    }
+  
+    h1 {
+        text-align: center; /* Центрирование заголовков */
+    }
+  
+    section > h2 {
+        text-align: center; /* Центрирование заголовков */
+    }
+  }

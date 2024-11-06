@@ -1,31 +1,3 @@
-/* Основные стили */
-body {
-    background-color: #f9f9f9; /* Светлый фон для всего сайта */
-    color: #333; /* Темный цвет текста для лучшей читаемости */
-    font-family: 'SofadiOne', sans-serif; /* Шрифт для всего сайта */
-}
-
-h1 {
-    font-size: 2.5em; /* Увеличение размера заголовка */
-    text-align: center; /* Центрирование заголовка */
-    margin: 20px 0; /* Отступы сверху и снизу */
-    color: #ff3300; /* Яркий цвет для заголовка */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Легкая тень для заголовка */
-}
-
-h2 {
-    font-size: 2em; /* Размер подзаголовка */
-    text-align: center; /* Центрирование подзаголовка */
-    margin: 15px 0; /* Отступы сверху и снизу */
-    color: #555; /* Нейтральный цвет для подзаголовка */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Легкая тень для подзаголовка */
-}
-
-section {
-    padding: 40px 0; /* Отступы сверху и снизу для секций */
-}
-
-/* Стили для карточек с блюдами */
 section > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -41,13 +13,11 @@ section > div > div {
     background-color: white;
     cursor: pointer;
     filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
-    transition: border 0.3s, background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Добавлены эффекты при наведении */
+    transition: border 0.3s, background-color 0.3s;
 }
 
 section > div > div:hover {
     border: 2px solid tomato;
-    transform: translateY(-5px); /* Подъем карточки при наведении */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Легкая тень при наведении */
 }
 
 section > div > div > img {
@@ -59,9 +29,12 @@ section > div > div > p {
     margin: 5px 0;
 }
 
-section > div > div > p.price,
+section > div > div > p.price {
+    font-size: 1.5em; /* Увеличение размера шрифта для цены */
+}
+
 section > div > div > p.dish-name {
-    font-size: 1.5em; /* Увеличение размера шрифта для цены и названия блюда */
+    font-size: 1.5em; /* Увеличение размера шрифта для названия блюда */
 }
 
 section > div > div > p.dish-weight {
@@ -79,15 +52,14 @@ section > div > div > button {
 
 section > div > div > button:hover {
     text-decoration: none;
-    background-color: #ff3300; /* Цвет кнопки при наведении */
+    background-color: #ff3300;
 }
 
 section > div > div > button:active {
     text-decoration: none;
-    background-color: #ed7c03; /* Цвет кнопки при нажатии */
+    background-color: #ed7c03;
 }
 
-/* Стили для заметок и форм */
 p.note {
     font-style: italic;
     font-size: 14px;
@@ -111,9 +83,7 @@ fieldset {
     margin-right: auto;
 }
 
-input,
-select,
-textarea {
+input, select, textarea {
     width: calc(100% - 20px);
     margin: 10px 0;
     padding: 10px;
@@ -122,49 +92,44 @@ textarea {
 }
 
 button {
-    background-color: #ff9500; 
-    color: white; 
-    border:none; 
-   padding :10 px ; 
-   border-radius :4 px ; 
-   cursor : pointer ; 
+    background-color: #ff9500;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-/* Эффект при наведении на кнопки */
-button:hover { 
-   background-color :#ff0274 ; 
+button:hover {
+    background-color: #ff0274;
 }
 
 /* Адаптивность */
-@media (max-width :800 px) { 
-   section > div { 
-       grid-template-columns :repeat(2 ,1fr ); /* Изменение на две колонки */ 
-   }
+@media (max-width: 800px) {
+    section > div {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    }
 
-   nav { 
-       flex-direction :column ; 
-       align-items :center ; /* Центрируем элементы в навигации */ 
-   }
+    nav {
+        flex-direction: column;
+        align-items: center; /* Центрируем элементы в навигации */
+    }
 
-   nav a { 
-       font-size :12 px ; /* Уменьшение шрифта на мобильных устройствах */ 
-   }
+    nav a {
+        font-size: 12px; /* Увеличиваем шрифт на 4px */
+    }
 }
 
-@media (max-width :600 px) { 
-   section > div { 
-       grid-template-columns :repeat(1 ,1fr ); /* Изменение на одну колонку */ 
-   }
+@media (max-width: 600px) {
+    section > div {
+        grid-template-columns: repeat(1, 1fr); /* 1 колонка */
+    }
 
-   h1 { 
-       font-size :2 em ; /* Уменьшение размера заголовка на мобильных устройствах */ 
-   }
+    h1 {
+        text-align: center; /* Центрирование заголовков */
+    }
 
-   h2 { 
-       font-size :1.5 em ; /* Уменьшение размера подзаголовка на мобильных устройствах */ 
-   }
-
-   section > h2 { 
-       text-align :center ; /* Центрирование заголовков */ 
-   }
+    section > h2 {
+        text-align: center; /* Центрирование заголовков */
+    }
 }

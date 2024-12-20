@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
       displayNotification("Выберите суп или главное блюдо");
     } else if (
       selectedCategories.includes("drink") &&
+        selectedCategories.includes("dessert")) &&
+      !selectedCategories.includes("soup") &&
       !selectedCategories.includes("main_course")
     ) {
       displayNotification("Выберите главное блюдо");

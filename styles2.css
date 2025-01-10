@@ -193,7 +193,7 @@ select {
 
 /* Стили для кнопки отправки формы */
 button[type="submit"] {
-    background-color: #28a745; 
+    background-color: #ff0080; 
     border: none; 
     padding: 10px 15px; 
     border-radius: 5px; 
@@ -201,7 +201,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #218838; 
+    background-color: #ff005d; 
 }
 
 button[type="reset"]{
@@ -272,7 +272,7 @@ button[type="reset"]:hover {
 }
 
 .combo-item:hover {
-    border-color:#218838;
+    border-color:#a40047;
 }
 
 .combo-item img {
@@ -296,7 +296,7 @@ button[type="reset"]:hover {
     padding: 15px 25px; 
     background-color: #e7fae6; 
     color: #333333; 
-    border: 2px solid #000000; 
+    border: 2px solid #ff9d00; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     z-index: 1000;
     text-align: center;
@@ -306,7 +306,7 @@ button[type="reset"]:hover {
 .notification button {
     margin-top: 10px; 
     padding: 10px 20px; 
-    background-color:  #e7fae6; 
+    background-color:  #f4dabc; 
     color: #000000; 
     border: 2px solid #000000; 
     border-radius: 5px; 
@@ -315,7 +315,7 @@ button[type="reset"]:hover {
 }
 
 .notification button:hover {
-    background-color: #8cd79b; 
+    background-color: #ff006f; 
 }
 
 

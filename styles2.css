@@ -1,0 +1,338 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 10px; 
+}
+
+.meals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; /* Отступ между элементами сетки */
+}
+
+.meal-item {
+    display: flex; /* Flexbox для выравнивания элементов */
+    flex-direction: column; /* Вертикальное направление */
+
+    padding: 30px 40px;
+    border-radius: 35px; /* Радиус закругления */
+    cursor: pointer; /* Вид курсора */
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13)); 
+    background-color: white;     
+}
+
+.meal-item:hover {
+    border: 2px solid rgb(129, 220, 120); 
+}
+
+.meal-item img {
+    width: 100%; 
+    border-radius: 35px; 
+}
+
+
+.meal-count{
+    color: gray; 
+    font-size: 0.9em;
+}
+
+button {
+    background-color: #f1eee9; 
+    margin-top: 10px; 
+    padding: 10px 30px; /* Внутренние отступы: 10px сверху и снизу, 30px справа и слева */
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;   
+    width: 100%;
+}
+
+
+button:hover {
+    border: 2px solid rgb(129, 220, 120);
+    background-color: #87f29e;
+}
+
+.filters button {
+    text-align: left;
+    width: fit-content;
+    margin: 20px 20px;
+    padding: 10px 30px;
+    background-color: #f1eee9;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  .filters button:hover {
+    border: 2px solid rgb(129, 220, 120);
+    background-color: #87f29e;
+}
+
+  .filters button.active {
+    color: #000000;
+    background-color: #87f29e;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px; 
+    color:#333;
+}
+
+main, nav {
+    margin: 20px; /* отступы вокруг блоков */
+    padding: 40px; /* внутренние отступы для блоков */
+    box-shadow: 0 2px 7px rgb(224, 221, 221); 
+}
+
+header {
+    margin: 20px; 
+    padding: 20px; 
+    box-shadow: 0 2px 7px rgb(224, 221, 221); 
+}
+
+h1, h2, h3 {
+    color: #000000; 
+}
+
+img {
+    width: 60%; 
+    height: auto; 
+}
+
+nav a:hover {
+    color: #ff2600; 
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    text-decoration: none; 
+    margin: 0 15px;
+
+}
+
+.navigation a.active {
+    color: #ff2600;
+}
+
+
+footer {
+    color: white;
+    background-color:  black;  
+    padding: 30px; 
+    text-align: center;
+    margin-top: 30px; 
+}
+
+
+/* Стили для секции */
+section .forma{
+    max-width: 800px;
+    margin: 20px auto; /* Центрирование секции */
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+}
+
+
+/* Общие стили для fieldset */
+fieldset {
+    border: 1px solid #999; 
+    border-radius: 6px; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+}
+
+/* Заголовок для fieldset */
+legend {
+    font-weight: bold; 
+    padding: 0 10px; 
+}
+
+/* Обертка для формы */
+.form-container {
+    display: flex; /* Используем Flexbox для расположения полей строки */
+    justify-content: space-between; /* Распределяем пространство между полями */
+}
+
+/* Стили для блоков заказа и данных клиента */
+.order, .customer-section {
+    flex: 1; /* Каждый блок занимает равное пространство */
+    margin: 0 10px; 
+    min-width: 300px; 
+}
+
+/* Стили для input, select и textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 8px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+
+
+/* Стили для кнопки отправки формы */
+button[type="submit"] {
+    background-color: #28a745; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer;    
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; 
+}
+
+button[type="reset"]{
+    border: none;
+}
+
+button[type="reset"]:hover {
+    background-color: #fb7b7b; 
+}
+
+
+@media (min-width: 600px) and (max-width: 799px) {
+    .dish-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+    section > h2 {
+        text-align: center; 
+    }
+    .dish-grid {
+        grid-template-columns: repeat(1,1fr); 
+}    
+
+}
+
+@media (max-width: 399px) {
+    .dish-grid {
+        grid-template-columns: repeat(1,1fr); 
+    }
+}
+
+
+
+.dish-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    width: 200px;
+    display: inline-block;
+}
+
+
+
+.lunch-combo {
+    text-align: center;
+}
+
+.combo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.combo-item {
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0.5rem;
+    border: 2px solid #0c0c0c;
+}
+
+.combo-item:hover {
+    border-color:#218838;
+}
+
+.combo-item img {
+    width: 4rem;
+    transition: transform 0.3s;
+}
+
+.combo-item img:hover {
+    transform: translateY(-10px) scale(1.1);
+}
+
+.dessert-note {
+    font-size: 0.9em;
+}
+
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 25px; 
+    background-color: #e7fae6; 
+    color: #333333; 
+    border: 2px solid #000000; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.notification button {
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    background-color:  #e7fae6; 
+    color: #000000; 
+    border: 2px solid #000000; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.notification button:hover {
+    background-color: #8cd79b; 
+}
+
+
+.checkout-panel {
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled {
+    pointer-events: none;
+    color: grey;
+}
